@@ -1,3 +1,3 @@
-import "./styles.css";
+import { loadHomePage } from './homepage-loader.js'
 
-console.log("hello world")
+loadHomePage()
