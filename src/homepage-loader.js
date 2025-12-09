@@ -112,22 +112,6 @@ class PopularItem {
         this.#description = description
     }
 
-    get image() {
-        return this.#image
-    }
-
-    get imageAlt() {
-        return this.#imageAlt
-    }
-
-    get name() {
-        return this.#name
-    }
-
-    get description() {
-        return this.#description
-    }
-
     appendTo(dom) {
         const popularItem = document.createElement("div")
         popularItem.classList.add("popular-item")
