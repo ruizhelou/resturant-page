@@ -1,5 +1,3 @@
-import "./styles.css";
-
 import beefBurgerImage from "./images/beef.jpg";
 import chickenBurgerImage from "./images/chicken.jpg";
 import fishBurgerImage from "./images/fish.jpg";
