@@ -68,30 +68,11 @@ function loadHomePage() {
     sunday.textContent = "Sunday: 8am - 8pm"
     hoursList.appendChild(sunday)
 
-    // const contact = document.createElement("div")
-
-    // const contactTitle = document.createElement("div")
-    // contactTitle.classList.add("sub-title")
-    // contactTitle.textContent = "Contact:"
-    // contact.appendChild(contactTitle)
-
-    // const address = document.createElement("div")
-    // address.classList.add("address")
-    // address.textContent = "Address: 123 Forest Drive, Forestville, Maine"
-    // contact.appendChild(address)
-
-    // const phoneNumber = document.createElement("div")
-    // phoneNumber.classList.add("phone-number")
-    // phoneNumber.textContent = "Phone: +64 5672901"
-    // contact.appendChild(phoneNumber)
-    
-
     content.appendChild(title)
     content.appendChild(slogan)
     content.appendChild(popularItemsTitle)
     content.appendChild(popularItems)
     content.appendChild(hours)
-    // content.appendChild(contact)
 }
 
 class PopularItem {

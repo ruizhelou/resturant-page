@@ -1,5 +1,6 @@
 import { loadHomePage } from './homepage-loader.js'
 import { loadMenu } from './menu-loader.js'
+import { loadContact } from './contact-loader.js'
 import "./styles.css"
 
 class DomRenderer {
@@ -10,6 +11,7 @@ class DomRenderer {
     constructor() {
         this.homeButton.addEventListener('click', event => this.render(loadHomePage))
         this.menuButton.addEventListener('click', event => this.render(loadMenu))
+        this.contactButton.addEventListener('click', event => this.render(loadContact))
     }
 
     render(loader) {

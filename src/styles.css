@@ -45,7 +45,10 @@ body {
   margin-bottom: 5px;
 }
 
-#content > .slogan {
+/* ==================== HOMEPAGE ==================== */
+
+
+.slogan {
   font-size: var(--font-sub-heading-size);
   font-style: italic;
 }
@@ -97,8 +100,7 @@ button:hover {
   cursor: pointer;
 }
 
-/* ======================================================= */
-
+/* ==================== MENU ==================== */
 .menu {
   display: grid;
   width: 100%;
@@ -112,8 +114,8 @@ button:hover {
   align-items: center;
 
   padding: 5px;
-  box-shadow: 0px 0px 1px #888888;
-  border-width: 1px;
+  /* box-shadow: 0px 0px 1px #888888;
+  border-width: 1px; */
 }
 
 .menu-item > .price {
@@ -126,4 +128,30 @@ button:hover {
 
 .menu-item > img {
   margin-top: auto;
+}
+
+/* ==================== CONTACT ==================== */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-card {
+  width: min(300px, 100%);
+  padding: 20px;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 25px;
+}
+
+.contact-card > img {
+  width: 50px;
+  height: auto;
+}
+
+.contact-title {
+  font-size: var(--font-sub-heading-size);
 }
