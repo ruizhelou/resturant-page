@@ -11,26 +11,22 @@ function loadHomePage() {
 
     const slogan = document.createElement("div")
     slogan.classList.add("slogan")
-    slogan.textContent = "Taste the Rich Life"
-
-    const summary = document.createElement("div")
-    summary.classList.add("summary")
-    summary.textContent = "Every bite should feel like a reward. Our menu is stacked with juicy, handcrafted burgers, crispy sides, and flavors that deliver true richness in every mouthful."
+    slogan.textContent = "Taste the Rich Life - Every bite should feel like a reward. Our menu is stacked with juicy, handcrafted burgers, crispy sides, and flavors that deliver true richness in every mouthful."
 
     const popularItemsTitle = document.createElement("div")
     popularItemsTitle.classList.add("sub-title")
-    popularItemsTitle.textContent = "Popular Items"
+    popularItemsTitle.textContent = "Popular Items:"
 
     const popularItems = document.createElement("div")
     popularItems.classList.add("popular-items")
 
-    const beefBurger = new PopularItem(beefBurgerImage, "A beef burger", "Prime Investment", "100% premium beef, aged white cheddar, arugula, and black-pepper aioli. A high-value ROI (Return on Indulgence).");
+    const beefBurger = new PopularItem(beefBurgerImage, "A beef burger", "Prime Investment 🥇", "100% premium beef, aged white cheddar, arugula, and black-pepper aioli. A high-value ROI (Return on Indulgence).");
     beefBurger.appendTo(popularItems)
 
-    const chickenBurger = new PopularItem(chickenBurgerImage, "A chicken burger", "Rich Chick", "Crispy or grilled chicken breast, creamy slaw, and house honey-gold sauce. Your wallet won’t cluck at this one.");
+    const chickenBurger = new PopularItem(chickenBurgerImage, "A chicken burger", "Rich Chick 🥈", "Crispy or grilled chicken breast, creamy slaw, and house honey-gold sauce. Your wallet won’t cluck at this one.");
     chickenBurger.appendTo(popularItems)
 
-    const fishBurger = new PopularItem(fishBurgerImage, "A fish burger", "Codzilla Fortune", "A giant cod patty, crunchy slaw, and citrus mayo. Big flavor, big fun.");
+    const fishBurger = new PopularItem(fishBurgerImage, "A fish burger", "Codzilla Fortune 🥉", "A giant cod patty, crunchy slaw, and citrus mayo. Big flavor, big fun.");
     fishBurger.appendTo(popularItems)
 
     const hours = document.createElement("div")
@@ -72,31 +68,30 @@ function loadHomePage() {
     sunday.textContent = "Sunday: 8am - 8pm"
     hoursList.appendChild(sunday)
 
-    const contact = document.createElement("div")
+    // const contact = document.createElement("div")
 
-    const contactTitle = document.createElement("div")
-    contactTitle.classList.add("sub-title")
-    contactTitle.textContent = "Contact:"
-    contact.appendChild(contactTitle)
+    // const contactTitle = document.createElement("div")
+    // contactTitle.classList.add("sub-title")
+    // contactTitle.textContent = "Contact:"
+    // contact.appendChild(contactTitle)
 
-    const address = document.createElement("div")
-    address.classList.add("address")
-    address.textContent = "Address: 123 Forest Drive, Forestville, Maine"
-    contact.appendChild(address)
+    // const address = document.createElement("div")
+    // address.classList.add("address")
+    // address.textContent = "Address: 123 Forest Drive, Forestville, Maine"
+    // contact.appendChild(address)
 
-    const phoneNumber = document.createElement("div")
-    phoneNumber.classList.add("phone-number")
-    phoneNumber.textContent = "Phone: +64 5672901"
-    contact.appendChild(phoneNumber)
+    // const phoneNumber = document.createElement("div")
+    // phoneNumber.classList.add("phone-number")
+    // phoneNumber.textContent = "Phone: +64 5672901"
+    // contact.appendChild(phoneNumber)
     
 
     content.appendChild(title)
     content.appendChild(slogan)
-    content.appendChild(summary)
     content.appendChild(popularItemsTitle)
     content.appendChild(popularItems)
     content.appendChild(hours)
-    content.appendChild(contact)
+    // content.appendChild(contact)
 }
 
 class PopularItem {
@@ -133,8 +128,8 @@ class PopularItem {
         itemDesc.textContent = this.#description
         itemInfo.appendChild(itemDesc)
 
-        popularItem.appendChild(itemImage)
         popularItem.appendChild(itemInfo)
+        popularItem.appendChild(itemImage)
         dom.appendChild(popularItem)
     }
 }
