@@ -10,7 +10,7 @@ function loadContact() {
     contact.classList.add("contact")
 
     const contactTitle = document.createElement("div")
-    contactTitle.classList.add("sub-title")
+    contactTitle.classList.add("title")
     contactTitle.textContent = "Contact:"
 
     const emailContact = new Contact("Email", "rich.burger@notarealdomain.com", emailIcon)
